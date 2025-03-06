@@ -1,0 +1,341 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+.poppins-extralight {
+  font-family: "Poppins", serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: poppins;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(255, 127, 127, 0.5);
+  justify-content: flex-start;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+header {
+  height: 10vh;
+  width: 100vw;
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: crimson;
+  padding: 0px 5vw;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 20px 1px rgb(255, 115, 115);
+}
+
+.dev{
+  color: black;
+  text-shadow: 0px 0px 5px black;
+  transition: all 0.5s;
+}
+
+.dev:hover{
+  scale: 1.2;
+  font-weight: bolder;
+  text-shadow: 5px 15px 3px rgb(0, 0, 0);
+}
+
+.header-title {
+  color: crimson;
+  padding: 0vh 1vw;
+  box-sizing: border-box;
+  background-color: rgb(0, 0, 0);
+  border-radius: 10px;
+  text-shadow: 2px 2px 5px black;
+  box-shadow: 0px 0px 10px 1px black;
+  cursor: pointer;
+  scale: 0.9;
+  transition: all 0.3s;
+}
+
+.header-title:hover {
+  scale: 1;
+}
+
+.title_A {
+  text-decoration: none;
+}
+
+.header-add-btn {
+  color: crimson;
+  padding: 0vh 1vw;
+  box-sizing: border-box;
+  background-color: rgb(0, 0, 0);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s;
+  scale: 0.9;
+  box-shadow: 0px 0px 10px 1px black;
+}
+
+.header-add-btn:hover {
+  scale: 1;
+}
+.right {
+  height: inherit;
+  min-width: max-content;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.topbar {
+  display: flex;
+  height: 10%;
+  padding: 10px 1vw;
+  background-color: rgb(0, 0, 0);
+  position: sticky;
+  top: 0px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.t {
+  border-radius: 10px;
+  color: white;
+  background-color: crimson;
+  box-sizing: border-box;
+  padding: 1vh 1vw;
+  box-shadow: 0px 0px 10px 2px crimson;
+}
+.chat_box {
+  height: 90vh;
+  width: 90vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1vw;
+  box-sizing: border-box;
+  gap: 5vh;
+  transition: all 0.5s;
+}
+
+.chat_window {
+  height: 85%;
+  width: 100%;
+  border-radius: 20px;
+  background-color: rgb(0, 0, 0);
+  box-shadow: 0px 0px 10px 1px crimson;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0vh 1vw;
+  box-sizing: border-box;
+  overflow-y: scroll;
+  gap: 3vh;
+  padding-bottom: 2vh;
+  overflow-x: hidden;
+}
+
+.chat_window::-webkit-scrollbar {
+  display: none;
+}
+
+
+.onstart {
+  color: white;
+  align-self: center;
+  justify-self: center;
+}
+
+.snd_msg {
+  color: crimson;
+  background-color: rgba(0, 0, 0, 0.479);
+}
+
+
+#chat_input::placeholder {
+  color: rgb(0, 0, 0);
+}
+
+.iii {
+  background-color: rgb(255, 149, 149);
+  padding: 0px 1vw;
+  border-radius: 20px;
+}
+
+.chat_holder {
+  max-width: 50%;
+  width: max-content;
+  box-sizing: border-box;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px 1vw;
+  border-radius: 10px;
+  background-color: crimson;
+  color: black;
+  box-shadow: 0px 0px 10px 1px crimson;
+}
+
+.chat_text {
+  font-weight: 800;
+  color: white;
+
+}
+
+.bottom-bar {
+  min-height: 10%;
+  width: 80%;
+  padding: 0px 1vw;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  position: relative;
+  gap: 20px;
+}
+
+.user {
+  align-self: flex-end;
+  margin-right: 1vw;
+}
+
+.user .iii{
+  margin-left: auto;
+}
+
+.chatbot {
+  align-self: flex-start;
+  margin-left: 1vw;
+}
+
+#bottom-bar-add-btn,
+#bottom-bar-send-btn {
+  color: crimson;
+  padding: 0.5vh 0.8vw;
+  box-sizing: border-box;
+  background-color: rgb(0, 0, 0);
+  border-radius: 10px;
+  border: none;
+  font-size: 1.5vw;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.btns:hover {
+  scale: 1.1;
+  font-size: 2vw;
+  font-weight: 900;
+  color: rgb(0, 255, 128) !important;
+}
+
+#chat_input {
+  color: rgb(255, 255, 255) !important;
+  font-weight: 900;
+  width: 90%;
+  height: 80%;
+  outline: none;
+  border: none;
+  border-radius: 999px;
+  padding: 0px 1vw;
+  font-size: 1.3vw;
+  box-sizing: border-box;
+  background-color: rgba(255, 0, 0, 0.479);
+}
+
+
+@media only screen and (max-width: 700px) {
+  .bottom-bar{
+    width: 100%;
+  }
+  body{
+    gap: 10px;
+  }
+  .dev{
+    font-size: 3vw;
+  }
+#chat_input{
+  height: 60%;
+  font-size: 3vw;
+  max-width: 100%;
+}
+
+#bottom-bar-add-btn,
+#bottom-bar-send-btn{
+  font-size: 3vw;
+  border-radius: 7px;
+  padding: 1vh 2vw;
+}
+
+.chat_holder{
+  max-width: 90%;
+}
+.user .chat_text{
+  align-self: flex-start;
+}
+
+.bottom-bar{
+  gap: 5px;
+}
+.user .iii{
+margin-left: auto;
+}
+
+body{
+  overflow-y: hidden;
+}
+
+}
+
+@media only screen and (max-width: 500px){
+  
+header{
+  height: max-content;
+}
+.header-title{
+  scale: 0.8;
+}
+
+  .bottom-bar{
+    width: 100%;
+  }
+#chat_input{
+  height: 60%;
+  font-size: 3vw;
+  width: 100%;
+}
+
+#bottom-bar-add-btn,
+#bottom-bar-send-btn{
+  font-size: 3vw;
+  border-radius: 7px;
+  padding: 1vh 2vw;
+}
+
+.chat_holder{
+  max-width: 90%;
+}
+.user .chat_text{
+  align-self: flex-start;
+}
+
+.user .iii{
+margin-left: auto;
+}
+
+}
+
