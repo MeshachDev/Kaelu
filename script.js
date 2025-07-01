@@ -49,10 +49,19 @@ async function sendMessage() {
     body: JSON.stringify({
       model: "llama3-8b-8192",
       messages: [{ role: "user", content:(
-          `This is the prompt : ${userInput}
-          give me the data in html format 
-          headings in heading tags and content in p tag
-          Just give me the content in html format, no extra prompts
+          `
+          This is the user input : ${userInput}
+          
+          Please provide the following data in pure HTML format only:
+
+- The title should be enclosed in appropriate heading tags (e.g., <h1> to <h3>).
+- The content should be enclosed in paragraph <p> tags.
+- No additional text, explanation, or formatting outside of these HTML tags.
+- Example output format:
+
+<h1>Your Title Here</h1>
+<p>Your content here.</p>
+
           `
       )   
      }],
