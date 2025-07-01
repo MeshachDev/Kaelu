@@ -48,7 +48,13 @@ async function sendMessage() {
     },
     body: JSON.stringify({
       model: "llama3-8b-8192",
-      messages: [{ role: "user", content: userInput }],
+      messages: [{ role: "user", content:(
+          `This is the query ${userInput}
+          give me the data in html format 
+          headings in heading tags and content in p tag
+          `
+      )   
+     }],
     }),
   });
 
